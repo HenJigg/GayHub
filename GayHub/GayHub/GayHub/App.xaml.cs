@@ -1,28 +1,37 @@
-﻿using System;
+﻿using DryIoc;
+using DryIoc.Microsoft.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+using Prism.DryIoc;
+using Prism.Ioc;
+using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace GayHub
 {
-    public partial class App : Application
+    public partial class App
     {
-        public App()
+        protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            await NavigationService.NavigateAsync(AppViewKeys.Index);
         }
 
-        protected override void OnStart()
+        protected override IContainerExtension CreateContainerExtension()
         {
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddAutoMapper(config =>
+            {
+                config.AddProfile<AppMapper>();
+            });
+            return new DryIocContainerExtension(new Container(CreateContainerRules())
+                .WithDependencyInjectionAdapter(serviceCollection));
         }
 
-        protected override void OnSleep()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-        }
-
-        protected override void OnResume()
-        {
+            containerRegistry.RegisterAppServices();
         }
     }
 }

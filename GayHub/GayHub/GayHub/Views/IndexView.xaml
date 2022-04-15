@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GayHub.Views.IndexView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Command="{Binding TestCommand}" Text="GetAll" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

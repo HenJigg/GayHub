@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GayHub.iOS", "GayHub\GayHub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GayHub", "GayHub\GayHub\GayHub.csproj", "{C504C5FD-218D-4308-A3BA-CFB85EED13AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E38A0D6-D9A4-4481-BACA-54B09F3E24C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE436249-995B-48EB-8238-34A2566C74A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GayHubGraphQL.Test", "GayHubGraphQL.Test\GayHubGraphQL.Test.csproj", "{8001F955-B84C-471C-838B-096E90AF5CC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,9 +79,27 @@ Global
 		{C504C5FD-218D-4308-A3BA-CFB85EED13AE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{C504C5FD-218D-4308-A3BA-CFB85EED13AE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{C504C5FD-218D-4308-A3BA-CFB85EED13AE}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|iPhone.Build.0 = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8001F955-B84C-471C-838B-096E90AF5CC1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1C15587-4F5C-4627-A4C0-C4FC5C3F15F3} = {2E38A0D6-D9A4-4481-BACA-54B09F3E24C2}
+		{DB8E5B13-72E5-4261-A558-F755AD602E01} = {2E38A0D6-D9A4-4481-BACA-54B09F3E24C2}
+		{C504C5FD-218D-4308-A3BA-CFB85EED13AE} = {2E38A0D6-D9A4-4481-BACA-54B09F3E24C2}
+		{8001F955-B84C-471C-838B-096E90AF5CC1} = {FE436249-995B-48EB-8238-34A2566C74A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EA6B459-EE88-46CA-A422-1692CAA0087D}
