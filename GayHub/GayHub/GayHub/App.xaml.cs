@@ -2,10 +2,7 @@
 using DryIoc.Microsoft.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Prism.DryIoc;
-using Prism.Ioc;
-using System;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+using Prism.Ioc; 
 
 namespace GayHub
 {
@@ -14,7 +11,7 @@ namespace GayHub
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
+            AppSettings.OnInitialized();
             await NavigationService.NavigateAsync(AppViewKeys.Index);
         }
 

@@ -1,37 +1,52 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="DryIoc.Microsoft.DependencyInjection" Version="5.1.0" />
-    <PackageReference Include="Octokit" Version="0.50.0" />
-    <PackageReference Include="Octokit.GraphQL" Version="0.1.8-beta" />
-    <PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
-    <PackageReference Include="Prism.Forms" Version="8.1.97" />
-    <PackageReference Include="Prism.Forms.Regions" Version="8.1.97" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="DryIoc.Microsoft.DependencyInjection" Version="5.1.0" />
+		<PackageReference Include="Octokit" Version="0.50.0" />
+		<PackageReference Include="Octokit.GraphQL" Version="0.1.8-beta" />
+		<PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
+		<PackageReference Include="Prism.Forms" Version="8.1.97" />
+		<PackageReference Include="Prism.Forms.Regions" Version="8.1.97" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
+		<PackageReference Include="Syncfusion.Licensing" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.Core" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfChart" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfListView" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="20.1.0.48" />
+		<PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="20.1.0.48" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Views\IndexView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\UserView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Views\IndexView.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Views\MainView.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Views\UserView.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+	</ItemGroup>
 </Project>

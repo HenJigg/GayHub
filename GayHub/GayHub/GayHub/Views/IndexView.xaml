@@ -4,8 +4,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <Button Command="{Binding TestCommand}" Text="GetAll" />
+        <StackLayout Padding="20">
+            <Label Text="{Binding User.Name}" />
+            <Label Text="{Binding User.Location}" />
+            <Label Text="{Binding User.Bio}" />
+            <Button Command="{Binding TestCommand}" Text="获取Github个人资料" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
