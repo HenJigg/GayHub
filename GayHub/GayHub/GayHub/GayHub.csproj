@@ -13,6 +13,7 @@
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="11.0.1" />
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
 		<PackageReference Include="DryIoc.Microsoft.DependencyInjection" Version="5.1.0" />
 		<PackageReference Include="Octokit" Version="0.50.0" />
 		<PackageReference Include="Octokit.GraphQL" Version="0.1.8-beta" />

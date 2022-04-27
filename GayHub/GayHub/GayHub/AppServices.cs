@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace GayHub
 {
-    internal static class AppServiceExtensions
+    internal static class AppServices
     {
         public static void RegisterAppServices(this IContainerRegistry services)
         {

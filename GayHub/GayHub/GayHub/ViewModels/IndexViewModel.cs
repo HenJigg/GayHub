@@ -1,36 +1,19 @@
-﻿using GayHub.Models.User;
-using GayHub.Services.User;
-using Prism.Commands;
-using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Prism.Commands;
+using Prism.Mvvm; 
 
 namespace GayHub.ViewModels
 {
-    internal class IndexViewModel : BindableBase
+    public class IndexViewModel : BindableBase
     {
-        private readonly IUserService userService;
-
-        public DelegateCommand TestCommand { get; set; }
-
-        public IndexViewModel(IUserService userService)
+        public DelegateCommand AppearingCommand { get; private set; }
+        public IndexViewModel()
         {
-            TestCommand = new DelegateCommand(GetAll);
-            this.userService = userService;
+            AppearingCommand = new DelegateCommand(Appearing);
         }
 
-        private UserModel user;
-
-        public UserModel User
+        private void Appearing()
         {
-            get { return user; }
-            set { user = value; RaisePropertyChanged(); }
-        }
 
-        private async void GetAll()
-        {
-            User = await userService.GetUserInfoAsync();
         }
     }
 }

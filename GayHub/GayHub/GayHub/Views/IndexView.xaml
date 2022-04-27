@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+﻿<ContentPage
     x:Class="GayHub.Views.IndexView"
     xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="{Binding User.Name}" />
-            <Label Text="{Binding User.Location}" />
-            <Label Text="{Binding User.Bio}" />
-            <Button Command="{Binding TestCommand}" Text="获取Github个人资料" />
-        </StackLayout>
-    </ContentPage.Content>
+    <lottie:AnimationView
+                x:Name="animationView"
+                Animation="github.json"
+                AutoPlay="True" WidthRequest="100" HeightRequest="100"
+                HorizontalOptions="Center"
+                RepeatCount="10"
+                RepeatMode="Restart"
+                VerticalOptions="Center" />
 </ContentPage>
